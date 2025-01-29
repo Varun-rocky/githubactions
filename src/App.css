@@ -1,0 +1,54 @@
+.App {
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+.game {
+  display: inline-block;
+  margin-top: 20px;
+}
+
+.board {
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+  grid-template-rows: repeat(3, 100px);
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.square {
+  width: 100px;
+  height: 100px;
+  font-size: 36px;
+  font-weight: bold;
+  background-color: #fff;
+  border: 1px solid #999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.square:hover {
+  background-color: #f0f0f0;
+}
+
+.status {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.reset {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #008cba;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.reset:hover {
+  background-color: #007b9a;
+}
