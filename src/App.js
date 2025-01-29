@@ -62,7 +62,7 @@ const TicTacToe = () => {
       <div className="board">
         {board.map((_, index) => renderSquare(index))}
       </div>
-      {winner && <div className="status">Winner: {winner} 🎉🏆 </div>}
+      {winner && <div className="status">Winner: {winner} 🎉 </div>}
       {!winner && <div className="status">{`Next player: ${isXNext ? 'X' : 'O'}`}</div>}
       <button className="reset" onClick={resetGame}>Reset Game</button>
     </div>
